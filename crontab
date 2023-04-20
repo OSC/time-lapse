@@ -17,4 +17,6 @@
 # - every month (*)
 # - Monday-Friday (1-5)
 
+# The script also touches a file to indicate it's working via the time stamp (which can be utilized as a manual status check and to debug any issues during initial setup and configuration). In order to utilize this status check, make a file "cron-running-verification.txt" and put something like this in the contents: "Check the timestamp on this file to verify the crontab is running. It should be updating every minute the crontab is active."
+
 # The last line executes the Daily Email script once at 8:01 p.m. on Monday-Friday.
