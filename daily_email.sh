@@ -2,6 +2,7 @@
 
 # The expected command line  to execute this script is: "./daily_email.sh" 
 # Replace EMAILADDRESS with the email address of the desired recipient.
+# OSC typically utilizes four cameras, hence the four repeated sections.  
      
 cd PROJECTPATH
 PROJECTPATH/daily_video.sh CAMERANAME1 1350
