@@ -1,6 +1,7 @@
 #!/bin/bash   
 
 # The expected command line  to execute this script is: "./daily_email.sh" 
+# Replace EMAILADDRESS with the email address of the desired recipient.
      
 cd PROJECTPATH
 PROJECTPATH/daily_video.sh CAMERANAME1 1350
