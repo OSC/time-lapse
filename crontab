@@ -1,0 +1,20 @@
+# Below are some key commands to utilize cron and interact with a crontab:
+# - To load a crontab from a file: crontab SCRIPTNAME
+# - To view the current crontab: crontab -l
+# - To directly edit the current crontab: crontab -e
+
+* 7-19 * * 1-5 PROJECTPATH/getimg.sh CAMERANAME 10
+* 7-19 * * 1-5 PROJECTPATH/getimg.sh 2 10
+* 7-19 * * 1-5 PROJECTPATH/getimg.sh 3 10
+* 7-19 * * 1-5 PROJECTPATH/getimg.sh 5 10
+* 7-19 * * 1-5 touch PROJECTPATH/cron_running_verification.txt
+1 20 * * 1-5 PROJECTPATH/daily_email.sh >& /dev/null
+
+# The first few characters on each line of a crontab designate the specific timing of when the shell command on that line should be executed. For the first five lines in listing 2, these correspond to:
+# - every minute (*)
+# - 7 a.m. to 7 p.m. (7-19)
+# - every day of the month (*)
+# - every month (*)
+# - Monday-Friday (1-5)
+
+# The last line executes the Daily Email script once at 8:01 p.m. on Monday-Friday.
